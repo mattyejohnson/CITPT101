@@ -1,0 +1,148 @@
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background: rgb(35, 27, 68);
+    box-sizing: content-box;
+}
+  
+.nav {
+    position: fixed;
+    height: 100vh;
+    background: rgb(5, 245, 253);
+    width: 10vw;
+    transition: 2s;
+    font-family: 'Jura', sans-serif;
+}
+
+.nav:hover {
+    width: 45vw;
+}
+
+.nav:hover ~ .container {
+    transform: perspective(80vw) rotateY(10deg) translateX(35vw) scaleY(1.2);
+}
+
+.nav:hover nav {
+    left: 20%;
+}
+
+.container {
+    width: 90%;
+    margin-left: 10vw;
+    background: rgb(209, 240, 250);
+    transition: 1s;
+    transform-origin: left center;
+    color: rgb(0, 0, 0);
+}
+
+.container .content {
+    padding: 100px 20%;
+}
+  
+nav {
+    position: absolute;
+    margin-top: 50%;
+    left: -1000px;
+    transition: 0.5s;
+}
+
+nav ul {
+    color: white;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+nav li {
+    line-height: 2em;
+    letter-spacing: 0.3em;
+}
+
+nav a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #eee;
+}
+  
+p {
+    line-height: 1.5em;
+}
+  
+h1 {
+    color: #bbb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+*:focus {
+    outline: 0;
+}
+  
+section {
+      background-color: #ffffff;
+      min-height: 100vh;
+      padding: 100px;
+      position: relative;
+      width: 100%;
+      z-index: 10;
+}
+  
+.content {
+      margin-bottom: 300px; 
+      font-family: 'Jura', sans-serif;
+}
+
+.content ul {
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+  
+section img {
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      width: 100%;
+}
+  
+section h2 {
+      font-size: 4em;
+}
+  
+section p {
+      font-size: 1.4em;
+      margin: 1rem 0;
+}
+  
+footer {
+      align-items: center;
+      background-color: rgb(35, 27, 68);
+      bottom: 0;
+      display: flex;
+      font-size: 7.5em;
+      height: 300px;
+      justify-content: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+}
+
+footer a {
+      color: rgb(5, 245, 253);
+}
+
+h1 {
+      font-size: 2em;
+      color: black;
+}
